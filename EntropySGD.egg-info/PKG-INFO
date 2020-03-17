@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: EntropySGD
+Version: 1.0.0
+Summary: Entropy SGD optimizer
+Home-page: https://github.com/steph1793/EntropySGD
+Author: David Stephane Belemkoabga
+Author-email: bdavidstephane@hotmail.com
+License: MIT
+Description: # Entropy SGD
+        This is a keras implementation of Entropy SGD.
+        More details on the paper : https://arxiv.org/abs/1611.01838
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+EntropySGD/EntropySGD.py
+EntropySGD/__init__.py
+EntropySGD.egg-info/PKG-INFO
+EntropySGD.egg-info/SOURCES.txt
+EntropySGD.egg-info/dependency_links.txt
+EntropySGD.egg-info/top_level.txt

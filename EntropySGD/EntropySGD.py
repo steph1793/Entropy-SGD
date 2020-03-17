@@ -11,7 +11,7 @@ import warnings
 warnings.filterwarnings("ignore", category=RuntimeWarning) 
 
 
-class SGLD(Optimizer):
+class ESGD(Optimizer):
     """Entropy SGD optimizer
     # Arguments
         lr: float >= 0. Learning rate.
@@ -98,7 +98,7 @@ class SGLD(Optimizer):
 
 
 
-class Histories(keras.callbacks.Callback):
+class History(keras.callbacks.Callback):
 
   def __init__(self):
     super(Histories, self).__init__()

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="EntropySGD", # Replace with your own username
-    version="0.0.1",
+    version="1.0.0",
     license='MIT',
     author="David Stephane Belemkoabga",
     author_email="bdavidstephane@hotmail.com",
