@@ -23,7 +23,7 @@ class ESGD(Optimizer):
     - [ENTROPY-SGD: BIASING GRADIENT DESCENT INTO WIDE VALLEYS](https://arxiv.org/pdf/1611.01838.pdf)
     """
     def __init__(self, lr=1., sgld_step=0.1, L=20, gamma=0.03, epsilon=1e-4, alpha=0.75, use_gamma_main_update=False, **kwargs):
-        super(SGLD, self).__init__(**kwargs)
+        super(ESGD, self).__init__(**kwargs)
         with K.name_scope(self.__class__.__name__):
             if use_gamma_main_update:
               self.lr = K.variable(lr*gamma, name='lr')
@@ -101,7 +101,7 @@ class ESGD(Optimizer):
 class History(keras.callbacks.Callback):
 
   def __init__(self):
-    super(Histories, self).__init__()
+    super(History, self).__init__()
     self.loss = []
     self.val_loss = []
     self.i = 0

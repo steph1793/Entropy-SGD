@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: EntropySGD
-Version: 1.0.0
+Version: 1.1.0
 Summary: Entropy SGD optimizer
 Home-page: https://github.com/steph1793/EntropySGD
 Author: David Stephane Belemkoabga
