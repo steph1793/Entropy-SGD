@@ -30,14 +30,14 @@ In this package, we have implemented 3 classes :
     - eff_loss : or effective loss. In EntropySGD the main update is done once every L iterations (L being the number of langevin descent steps). One effective epoch corresponds then to L regular epochs. eff_loss stores then the average loss after L regular epochs.
     - eff_val_loss : effective evaluation loss.
 ```python
-from EntropySGD import EntropySGD, EntropyAdam, History
+from EntropySGD import EntropySgd, EntropyAdam, History
 
 #create your keras model
 model = ...
 
 #create your optimizer
 ## EntropySGD optimizer
-optimizer = EntropySGD(lr=.001, sgld_step=0.1, 
+optimizer = EntropySgd(lr=.001, sgld_step=0.1, 
                         L=20, gamma=0.03, sgld_noise=1e-4, alpha=0.75, 
                         scoping=1e-3, momentum=0., nesterov=False, decay=.0)
 ## or EntropyAdam optimizer
