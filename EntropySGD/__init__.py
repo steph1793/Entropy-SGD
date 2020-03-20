@@ -1,2 +1,3 @@
-from EntropySGD.EntropySGD import ESGD
-from EntropySGD.EntropySGD import History
+from EntropySGD.EntropySGD import EntropySGD
+from EntropySGD.EntropyAdam import EntropyAdam
+from EntropySGD.History import History
