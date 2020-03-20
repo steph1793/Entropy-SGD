@@ -4,3 +4,5 @@ dist/
 EntropySGD.egg-info/
 
 setup.py
+
+*.cfg

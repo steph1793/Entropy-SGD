@@ -32,7 +32,7 @@ class EntropyAdam(Optimizer):
     #Reference
     - [ENTROPY-SGD: BIASING GRADIENT DESCENT INTO WIDE VALLEYS](https://arxiv.org/pdf/1611.01838.pdf)
     """
-    def __init__(self, lr=1., sgld_step=0.1, L=20, gamma=0.03, sgld_noise=1e-4, alpha=0.75, scoping=1e-3, beta_1=0.9, beta_2=0.999, amsgrad=False, decay=0., **kwargs):
+    def __init__(self, lr=.001, sgld_step=0.1, L=20, gamma=0.03, sgld_noise=1e-4, alpha=0.75, scoping=1e-3, beta_1=0.9, beta_2=0.999, amsgrad=False, decay=0., **kwargs):
         super(EntropyAdam, self).__init__(**kwargs)
         self.scoping = scoping
         self.L = L
