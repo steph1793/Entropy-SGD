@@ -21,7 +21,7 @@ pip install EntropySGD
 ```
 
 ## Usage
-In this package, we have implemented 3 classes :
+In this package, I have implemented 3 classes :
 - **EntropySGD** : which is the original implementation of the optimizer (with SGD and optionnaly a  Nesterov's Momentum on the outer loop update (the main update))
 - **EntropyAdam** : this is an adaptation of EntropySGD to Adam optimizer (on the outer loop update ).
 - **History** : this is a callback used to log the training and evaluation losses. Given the particularity of this optimizer (two loops) in comparison to a more classical one as SGD , one must discard the keras logger per default and use this one. At the end of the training we can find 4 arrays:
